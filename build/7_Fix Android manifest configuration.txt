@@ -1,0 +1,39 @@
+﻿2026-10-30T14:47:44.4778948Z ##[group]Run python - <<'PY'
+2026-10-30T14:47:44.4779316Z [36;1mpython - <<'PY'[0m
+2026-10-30T14:47:44.4779567Z [36;1mfrom pathlib import Path[0m
+2026-10-30T14:47:44.4779834Z [36;1m[0m
+2026-10-30T14:47:44.4780045Z [36;1mspec = Path("buildozer.spec")[0m
+2026-10-30T14:47:44.4780361Z [36;1mcontent = spec.read_text(encoding="utf-8")[0m
+2026-10-30T14:47:44.4780658Z [36;1m[0m
+2026-10-30T14:47:44.4780841Z [36;1mold = ([0m
+2026-10-30T14:47:44.4781110Z [36;1m    "android.extra_manifest_application_arguments = "[0m
+2026-10-30T14:47:44.4781523Z [36;1m    "./src/android/extra_manifest_application_arguments.xml"[0m
+2026-10-30T14:47:44.4781856Z [36;1m)[0m
+2026-10-30T14:47:44.4782038Z [36;1m[0m
+2026-10-30T14:47:44.4782456Z [36;1mnew = """android.extra_manifest_application_xml = ./src/android/extra_manifest_application_arguments.xml[0m
+2026-10-30T14:47:44.4783059Z [36;1mp4a.url = https://github.com/dvjdjvu/python-for-android[0m
+2026-10-30T14:47:44.4783431Z [36;1mp4a.branch = develop[0m
+2026-10-30T14:47:44.4783711Z [36;1mp4a.commit = 469c19f"""[0m
+2026-10-30T14:47:44.4783944Z [36;1m[0m
+2026-10-30T14:47:44.4784135Z [36;1mif old not in content:[0m
+2026-10-30T14:47:44.4784688Z [36;1m    raise SystemExit("Konfigurasi lama tidak ditemukan di buildozer.spec")[0m
+2026-10-30T14:47:44.4785079Z [36;1m[0m
+2026-10-30T14:47:44.4785351Z [36;1mspec.write_text([0m
+2026-10-30T14:47:44.4785624Z [36;1m    content.replace(old, new, 1),[0m
+2026-10-30T14:47:44.4785905Z [36;1m    encoding="utf-8"[0m
+2026-10-30T14:47:44.4786126Z [36;1m)[0m
+2026-10-30T14:47:44.4786303Z [36;1m[0m
+2026-10-30T14:47:44.4786550Z [36;1mprint("Konfigurasi manifest berhasil diperbarui.")[0m
+2026-10-30T14:47:44.4786866Z [36;1mPY[0m
+2026-10-30T14:47:44.4807549Z shell: /usr/bin/bash -e {0}
+2026-10-30T14:47:44.4807814Z env:
+2026-10-30T14:47:44.4808121Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T14:47:44.4808885Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T14:47:44.4809347Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T14:47:44.4809788Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T14:47:44.4810225Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T14:47:44.4810617Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T14:47:44.4811010Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T14:47:44.4811398Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T14:47:44.4811720Z ##[endgroup]
+2026-10-30T14:47:44.5052142Z Konfigurasi manifest berhasil diperbarui.
