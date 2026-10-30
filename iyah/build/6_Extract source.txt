@@ -1,0 +1,44 @@
+﻿2026-10-30T15:49:27.1060800Z ##[group]Run unzip NavMotion_X670_Source_v0.1.0.zip
+2026-10-30T15:49:27.1061266Z [36;1munzip NavMotion_X670_Source_v0.1.0.zip[0m
+2026-10-30T15:49:27.1084248Z shell: /usr/bin/bash -e {0}
+2026-10-30T15:49:27.1084547Z env:
+2026-10-30T15:49:27.1084903Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:27.1085505Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:27.1086060Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1086830Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T15:49:27.1087586Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1088053Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1088520Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1088985Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T15:49:27.1089381Z ##[endgroup]
+2026-10-30T15:49:27.1167723Z Archive:  NavMotion_X670_Source_v0.1.0.zip
+2026-10-30T15:49:27.1168757Z    creating: navmotion_x670/
+2026-10-30T15:49:27.1169559Z    creating: navmotion_x670/src/
+2026-10-30T15:49:27.1170383Z    creating: navmotion_x670/src/android/
+2026-10-30T15:49:27.1171231Z    creating: navmotion_x670/src/android/res/
+2026-10-30T15:49:27.1172060Z    creating: navmotion_x670/src/android/res/values/
+2026-10-30T15:49:27.1173124Z   inflating: navmotion_x670/src/android/res/values/strings.xml  
+2026-10-30T15:49:27.1174229Z    creating: navmotion_x670/src/android/res/xml/
+2026-10-30T15:49:27.1175557Z   inflating: navmotion_x670/src/android/res/xml/navmotion_accessibility_service.xml  
+2026-10-30T15:49:27.1176958Z   inflating: navmotion_x670/src/android/extra_manifest_application_arguments.xml  
+2026-10-30T15:49:27.1177807Z    creating: navmotion_x670/src/android/java/
+2026-10-30T15:49:27.1178617Z    creating: navmotion_x670/src/android/java/id/
+2026-10-30T15:49:27.1179709Z    creating: navmotion_x670/src/android/java/id/navmotion/
+2026-10-30T15:49:27.1180908Z    creating: navmotion_x670/src/android/java/id/navmotion/navmotionx670/
+2026-10-30T15:49:27.1182044Z   inflating: navmotion_x670/src/android/java/id/navmotion/navmotionx670/NavMotionAccessibilityService.java  
+2026-10-30T15:49:27.1182936Z    creating: navmotion_x670/tests/
+2026-10-30T15:49:27.1183561Z   inflating: navmotion_x670/tests/test_android_resources.py  
+2026-10-30T15:49:27.1184340Z   inflating: navmotion_x670/tests/test_config.py  
+2026-10-30T15:49:27.1185038Z   inflating: navmotion_x670/BUILD_APK_ID.md  
+2026-10-30T15:49:27.1185661Z    creating: navmotion_x670/assets/
+2026-10-30T15:49:27.1197282Z   inflating: navmotion_x670/assets/navmotion_icon.png  
+2026-10-30T15:49:27.1198312Z   inflating: navmotion_x670/main.py  
+2026-10-30T15:49:27.1199050Z    creating: navmotion_x670/docs/
+2026-10-30T15:49:27.1199666Z    creating: navmotion_x670/.github/
+2026-10-30T15:49:27.1200275Z    creating: navmotion_x670/.github/workflows/
+2026-10-30T15:49:27.1204092Z   inflating: navmotion_x670/.github/workflows/build-apk.yml  
+2026-10-30T15:49:27.1204744Z   inflating: navmotion_x670/buildozer.spec  
+2026-10-30T15:49:27.1205257Z   inflating: navmotion_x670/config.py  
+2026-10-30T15:49:27.1205757Z   inflating: navmotion_x670/build_android.sh  
+2026-10-30T15:49:27.1206268Z   inflating: navmotion_x670/README.md  
+2026-10-30T15:49:27.1207529Z  extracting: navmotion_x670/.gitignore  

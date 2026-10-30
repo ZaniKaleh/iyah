@@ -1,0 +1,54 @@
+﻿2026-10-30T15:49:27.1239226Z ##[group]Run git clone https://github.com/dvjdjvu/python-for-android.git p4a-custom
+2026-10-30T15:49:27.1239892Z [36;1mgit clone https://github.com/dvjdjvu/python-for-android.git p4a-custom[0m
+2026-10-30T15:49:27.1240362Z [36;1mgit -C p4a-custom checkout 469c19f[0m
+2026-10-30T15:49:27.1240652Z [36;1m[0m
+2026-10-30T15:49:27.1240853Z [36;1mpython - <<'PY'[0m
+2026-10-30T15:49:27.1241106Z [36;1mfrom pathlib import Path[0m
+2026-10-30T15:49:27.1241365Z [36;1m[0m
+2026-10-30T15:49:27.1241557Z [36;1mpath = Path([0m
+2026-10-30T15:49:27.1241836Z [36;1m    "p4a-custom/pythonforandroid/bootstraps/"[0m
+2026-10-30T15:49:27.1242214Z [36;1m    "common/build/templates/build.tmpl.gradle"[0m
+2026-10-30T15:49:27.1242526Z [36;1m)[0m
+2026-10-30T15:49:27.1242716Z [36;1m[0m
+2026-10-30T15:49:27.1242949Z [36;1mcontent = path.read_text(encoding="utf-8")[0m
+2026-10-30T15:49:27.1243262Z [36;1m[0m
+2026-10-30T15:49:27.1243536Z [36;1mold = "classpath 'com.android.tools.build:gradle:7.1.2'"[0m
+2026-10-30T15:49:27.1243999Z [36;1mnew = "classpath 'com.android.tools.build:gradle:7.3.1'"[0m
+2026-10-30T15:49:27.1244343Z [36;1m[0m
+2026-10-30T15:49:27.1244693Z [36;1mif old not in content:[0m
+2026-10-30T15:49:27.1245026Z [36;1m    raise SystemExit("Versi AGP lama tidak ditemukan!")[0m
+2026-10-30T15:49:27.1245369Z [36;1m[0m
+2026-10-30T15:49:27.1245676Z [36;1mpath.write_text(content.replace(old, new, 1), encoding="utf-8")[0m
+2026-10-30T15:49:27.1246215Z [36;1mprint("AGP berhasil diperbarui menjadi 7.3.1")[0m
+2026-10-30T15:49:27.1247017Z [36;1mPY[0m
+2026-10-30T15:49:27.1266967Z shell: /usr/bin/bash -e {0}
+2026-10-30T15:49:27.1267243Z env:
+2026-10-30T15:49:27.1267563Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:27.1268084Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:27.1268554Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1269004Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T15:49:27.1269465Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1269872Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1270270Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:27.1270683Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T15:49:27.1271024Z ##[endgroup]
+2026-10-30T15:49:27.1337495Z Cloning into 'p4a-custom'...
+2026-10-30T15:49:28.2595481Z Note: switching to '469c19f'.
+2026-10-30T15:49:28.2605329Z 
+2026-10-30T15:49:28.2606394Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-30T15:49:28.2607754Z changes and commit them, and you can discard any commits you make in this
+2026-10-30T15:49:28.2609018Z state without impacting any branches by switching back to a branch.
+2026-10-30T15:49:28.2609829Z 
+2026-10-30T15:49:28.2610509Z If you want to create a new branch to retain commits you create, you may
+2026-10-30T15:49:28.2611750Z do so (now or later) by using -c with the switch command. Example:
+2026-10-30T15:49:28.2612493Z 
+2026-10-30T15:49:28.2612929Z   git switch -c <new-branch-name>
+2026-10-30T15:49:28.2613457Z 
+2026-10-30T15:49:28.2613844Z Or undo this operation with:
+2026-10-30T15:49:28.2614354Z 
+2026-10-30T15:49:28.2614692Z   git switch -
+2026-10-30T15:49:28.2615082Z 
+2026-10-30T15:49:28.2615707Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-30T15:49:28.2616516Z 
+2026-10-30T15:49:28.2617477Z HEAD is now at 469c19f3 Adding support for including XML elements within <manifest><application>
+2026-10-30T15:49:28.2812196Z AGP berhasil diperbarui menjadi 7.3.1

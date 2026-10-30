@@ -1,0 +1,29 @@
+﻿2026-10-30T15:49:28.3383580Z ##[group]Run python -m py_compile main.py config.py
+2026-10-30T15:49:28.3384095Z [36;1mpython -m py_compile main.py config.py[0m
+2026-10-30T15:49:28.3384505Z [36;1mpython -m unittest discover -s tests -v[0m
+2026-10-30T15:49:28.3428087Z shell: /usr/bin/bash -e {0}
+2026-10-30T15:49:28.3428502Z env:
+2026-10-30T15:49:28.3428952Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:28.3429562Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:28.3430113Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.3430626Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T15:49:28.3431139Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.3431594Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.3432064Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.3432525Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T15:49:28.3432955Z ##[endgroup]
+2026-10-30T15:49:28.5946037Z test_accessibility_metadata_is_minimal (test_android_resources.AndroidResourceTests.test_accessibility_metadata_is_minimal) ... ok
+2026-10-30T15:49:28.5954726Z test_buildozer_includes_native_sources_and_resources (test_android_resources.AndroidResourceTests.test_buildozer_includes_native_sources_and_resources) ... ok
+2026-10-30T15:49:28.5957067Z test_native_overlay_uses_accessibility_window_type (test_android_resources.AndroidResourceTests.test_native_overlay_uses_accessibility_window_type) ... ok
+2026-10-30T15:49:28.5960547Z test_service_has_only_the_three_navigation_actions (test_android_resources.AndroidResourceTests.test_service_has_only_the_three_navigation_actions) ... ok
+2026-10-30T15:49:28.5962188Z test_service_is_protected_and_declared (test_android_resources.AndroidResourceTests.test_service_is_protected_and_declared) ... ok
+2026-10-30T15:49:28.5963796Z test_defaults_are_supported (test_config.ConfigTests.test_defaults_are_supported) ... ok
+2026-10-30T15:49:28.5964696Z test_duration_is_clamped (test_config.ConfigTests.test_duration_is_clamped) ... ok
+2026-10-30T15:49:28.5965513Z test_opacity_is_clamped (test_config.ConfigTests.test_opacity_is_clamped) ... ok
+2026-10-30T15:49:28.5966310Z test_size_is_clamped (test_config.ConfigTests.test_size_is_clamped) ... ok
+2026-10-30T15:49:28.5967478Z test_unknown_animation_uses_fallback (test_config.ConfigTests.test_unknown_animation_uses_fallback) ... ok
+2026-10-30T15:49:28.5968101Z 
+2026-10-30T15:49:28.5968336Z ----------------------------------------------------------------------
+2026-10-30T15:49:28.5968883Z Ran 10 tests in 0.001s
+2026-10-30T15:49:28.5969089Z 
+2026-10-30T15:49:28.5969207Z OK

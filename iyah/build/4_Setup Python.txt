@@ -1,0 +1,17 @@
+﻿2026-10-30T15:49:03.0126463Z ##[group]Run actions/setup-python@v5
+2026-10-30T15:49:03.0128157Z with:
+2026-10-30T15:49:03.0129444Z   python-version: 3.11
+2026-10-30T15:49:03.0130736Z   check-latest: false
+2026-10-30T15:49:03.0136312Z   token: ***
+2026-10-30T15:49:03.0137796Z   update-environment: true
+2026-10-30T15:49:03.0139162Z   allow-prereleases: false
+2026-10-30T15:49:03.0140499Z   freethreaded: false
+2026-10-30T15:49:03.0141765Z env:
+2026-10-30T15:49:03.0143242Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:03.0145214Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:03.0147079Z ##[endgroup]
+2026-10-30T15:49:03.1800165Z ##[group]Installed versions
+2026-10-30T15:49:03.2000022Z (node:2068) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-30T15:49:03.2002637Z Successfully set up CPython (3.11.17)
+2026-10-30T15:49:03.2004647Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-30T15:49:03.2007127Z ##[endgroup]

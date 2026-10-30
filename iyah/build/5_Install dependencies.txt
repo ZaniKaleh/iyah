@@ -1,0 +1,248 @@
+﻿2026-10-30T15:49:03.2317597Z ##[group]Run sudo apt-get update
+2026-10-30T15:49:03.2319207Z [36;1msudo apt-get update[0m
+2026-10-30T15:49:03.2320600Z [36;1msudo apt-get install -y \[0m
+2026-10-30T15:49:03.2322125Z [36;1m  git zip unzip build-essential autoconf \[0m
+2026-10-30T15:49:03.2323839Z [36;1m  automake libtool libltdl-dev autopoint \[0m
+2026-10-30T15:49:03.2325528Z [36;1m  pkg-config zlib1g-dev libncurses-dev libtinfo6 \[0m
+2026-10-30T15:49:03.2327391Z [36;1m  cmake libffi-dev libssl-dev \[0m
+2026-10-30T15:49:03.2329259Z [36;1m  ccache lbzip2 patch wget ant[0m
+2026-10-30T15:49:03.2330654Z [36;1m[0m
+2026-10-30T15:49:03.2332030Z [36;1mpython -m pip install --upgrade pip setuptools wheel[0m
+2026-10-30T15:49:03.2333530Z [36;1m[0m
+2026-10-30T15:49:03.2334682Z [36;1m[0m
+2026-10-30T15:49:03.2335938Z [36;1mpython -m pip install "Cython==0.29.34"[0m
+2026-10-30T15:49:03.2337545Z [36;1m[0m
+2026-10-30T15:49:03.2338700Z [36;1m[0m
+2026-10-30T15:49:03.2340110Z [36;1mpython -c "import Cython; print('Cython:', Cython.__version__)"[0m
+2026-10-30T15:49:03.2342121Z [36;1mcython --version[0m
+2026-10-30T15:49:03.2343362Z [36;1m[0m
+2026-10-30T15:49:03.2344522Z [36;1m[0m
+2026-10-30T15:49:03.2346076Z [36;1mpython -m pip install "git+https://github.com/dvjdjvu/buildozer.git@19c5a2b"[0m
+2026-10-30T15:49:03.2488732Z shell: /usr/bin/bash -e {0}
+2026-10-30T15:49:03.2490169Z env:
+2026-10-30T15:49:03.2491689Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:03.2493663Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:03.2495530Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:03.2497512Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T15:49:03.2499176Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:03.2500779Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:03.2502478Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:03.2504202Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T15:49:03.2505992Z ##[endgroup]
+2026-10-30T15:49:03.3744552Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-30T15:49:03.4434600Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-10-30T15:49:03.4727287Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-10-30T15:49:03.4729588Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-10-30T15:49:03.4731689Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-10-30T15:49:03.4733874Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-10-30T15:49:03.6787255Z Get:7 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [617 kB]
+2026-10-30T15:49:03.7097600Z Get:8 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [682 kB]
+2026-10-30T15:49:03.7620235Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1408 kB]
+2026-10-30T15:49:03.7641488Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [311 kB]
+2026-10-30T15:49:03.7771066Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1708 kB]
+2026-10-30T15:49:03.7800590Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [343 kB]
+2026-10-30T15:49:03.8203468Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1813 kB]
+2026-10-30T15:49:03.8206028Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [412 kB]
+2026-10-30T15:49:03.8208700Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.3 kB]
+2026-10-30T15:49:04.1389732Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1146 kB]
+2026-10-30T15:49:04.1392103Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [231 kB]
+2026-10-30T15:49:04.1394671Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1223 kB]
+2026-10-30T15:49:04.2024501Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [246 kB]
+2026-10-30T15:49:07.6229917Z Fetched 10.5 MB in 2s (6423 kB/s)
+2026-10-30T15:49:08.7316163Z Reading package lists...
+2026-10-30T15:49:08.7740499Z Reading package lists...
+2026-10-30T15:49:09.0320378Z Building dependency tree...
+2026-10-30T15:49:09.0334063Z Reading state information...
+2026-10-30T15:49:09.2011089Z git is already the newest version (1:2.56.0-0ppa1~ubuntu24.04.2).
+2026-10-30T15:49:09.2012657Z git set to manually installed.
+2026-10-30T15:49:09.2013806Z zip is already the newest version (3.0-13ubuntu0.2).
+2026-10-30T15:49:09.2014844Z unzip is already the newest version (6.0-28ubuntu4.1).
+2026-10-30T15:49:09.2019832Z autoconf is already the newest version (2.71-3).
+2026-10-30T15:49:09.2020871Z automake is already the newest version (1:1.16.5-1.3ubuntu1).
+2026-10-30T15:49:09.2025848Z libtool is already the newest version (2.4.7-7build1).
+2026-10-30T15:49:09.2033663Z pkg-config is already the newest version (1.8.1-2build1).
+2026-10-30T15:49:09.2035631Z zlib1g-dev is already the newest version (1:1.3.dfsg-3.1ubuntu2.3).
+2026-10-30T15:49:09.2037619Z libncurses-dev is already the newest version (6.4+20240113-1ubuntu2.2).
+2026-10-30T15:49:09.2038410Z libncurses-dev set to manually installed.
+2026-10-30T15:49:09.2039444Z libtinfo6 is already the newest version (6.4+20240113-1ubuntu2.2).
+2026-10-30T15:49:09.2040157Z libtinfo6 set to manually installed.
+2026-10-30T15:49:09.2040787Z libffi-dev is already the newest version (3.4.6-1build1).
+2026-10-30T15:49:09.2041464Z libffi-dev set to manually installed.
+2026-10-30T15:49:09.2042158Z libssl-dev is already the newest version (3.0.13-0ubuntu3.16).
+2026-10-30T15:49:09.2042902Z patch is already the newest version (2.7.6-7build3).
+2026-10-30T15:49:09.2043503Z patch set to manually installed.
+2026-10-30T15:49:09.2044118Z wget is already the newest version (1.21.4-1ubuntu4.5).
+2026-10-30T15:49:09.2044749Z ant is already the newest version (1.10.14-1).
+2026-10-30T15:49:09.2045576Z The following additional packages will be installed:
+2026-10-30T15:49:09.2057816Z   cmake-data libhiredis1.1.0 libjsoncpp25 librhash0
+2026-10-30T15:49:09.2061097Z Suggested packages:
+2026-10-30T15:49:09.2077627Z   distcc | icecc cmake-doc cmake-format elpa-cmake-mode ninja-build
+2026-10-30T15:49:09.2082837Z   libtool-doc
+2026-10-30T15:49:09.2372437Z The following NEW packages will be installed:
+2026-10-30T15:49:09.2378141Z   autopoint build-essential ccache cmake cmake-data lbzip2 libhiredis1.1.0
+2026-10-30T15:49:09.2385936Z   libjsoncpp25 libltdl-dev librhash0
+2026-10-30T15:49:09.2609844Z 0 upgraded, 10 newly installed, 0 to remove and 6 not upgraded.
+2026-10-30T15:49:09.2610661Z Need to get 14.9 MB of archives.
+2026-10-30T15:49:09.2611296Z After this operation, 52.4 MB of additional disk space will be used.
+2026-10-30T15:49:09.2612119Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-10-30T15:49:09.3011568Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 autopoint all 0.21-14ubuntu2 [422 kB]
+2026-10-30T15:49:09.3635548Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+2026-10-30T15:49:09.3840345Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhiredis1.1.0 amd64 1.2.0-6ubuntu3 [41.4 kB]
+2026-10-30T15:49:09.4078839Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 ccache amd64 4.9.1-1 [592 kB]
+2026-10-30T15:49:09.4933872Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjsoncpp25 amd64 1.9.5-6build1 [82.8 kB]
+2026-10-30T15:49:09.5633906Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 librhash0 amd64 1.4.3-3build1 [129 kB]
+2026-10-30T15:49:09.6257951Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 cmake-data all 3.28.3-1build7 [2155 kB]
+2026-10-30T15:49:09.9613315Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 cmake amd64 3.28.3-1build7 [11.2 MB]
+2026-10-30T15:49:10.9987326Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libltdl-dev amd64 2.4.7-7build1 [168 kB]
+2026-10-30T15:49:11.0326019Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 lbzip2 amd64 2.5-2.3 [65.7 kB]
+2026-10-30T15:49:11.3268432Z Fetched 14.9 MB in 2s (8295 kB/s)
+2026-10-30T15:49:11.3610865Z Selecting previously unselected package autopoint.
+2026-10-30T15:49:11.4198820Z (Reading database ... 
+2026-10-30T15:49:11.4199891Z (Reading database ... 5%
+2026-10-30T15:49:11.4200738Z (Reading database ... 10%
+2026-10-30T15:49:11.4201140Z (Reading database ... 15%
+2026-10-30T15:49:11.4201528Z (Reading database ... 20%
+2026-10-30T15:49:11.4201898Z (Reading database ... 25%
+2026-10-30T15:49:11.4202349Z (Reading database ... 30%
+2026-10-30T15:49:11.4202777Z (Reading database ... 35%
+2026-10-30T15:49:11.4203174Z (Reading database ... 40%
+2026-10-30T15:49:11.4203620Z (Reading database ... 45%
+2026-10-30T15:49:11.4204425Z (Reading database ... 50%
+2026-10-30T15:49:11.4815724Z (Reading database ... 55%
+2026-10-30T15:49:11.7860964Z (Reading database ... 60%
+2026-10-30T15:49:12.0490124Z (Reading database ... 65%
+2026-10-30T15:49:12.2957515Z (Reading database ... 70%
+2026-10-30T15:49:12.5330747Z (Reading database ... 75%
+2026-10-30T15:49:12.9843180Z (Reading database ... 80%
+2026-10-30T15:49:13.4699409Z (Reading database ... 85%
+2026-10-30T15:49:14.0281819Z (Reading database ... 90%
+2026-10-30T15:49:14.5598155Z (Reading database ... 95%
+2026-10-30T15:49:14.5602877Z (Reading database ... 100%
+2026-10-30T15:49:14.5655538Z (Reading database ... 215504 files and directories currently installed.)
+2026-10-30T15:49:14.5662280Z Preparing to unpack .../0-autopoint_0.21-14ubuntu2_all.deb ...
+2026-10-30T15:49:14.5688826Z Unpacking autopoint (0.21-14ubuntu2) ...
+2026-10-30T15:49:14.6097665Z Selecting previously unselected package build-essential.
+2026-10-30T15:49:14.6232756Z Preparing to unpack .../1-build-essential_12.10ubuntu1_amd64.deb ...
+2026-10-30T15:49:14.6248487Z Unpacking build-essential (12.10ubuntu1) ...
+2026-10-30T15:49:14.6547301Z Selecting previously unselected package libhiredis1.1.0:amd64.
+2026-10-30T15:49:14.6671957Z Preparing to unpack .../2-libhiredis1.1.0_1.2.0-6ubuntu3_amd64.deb ...
+2026-10-30T15:49:14.6694419Z Unpacking libhiredis1.1.0:amd64 (1.2.0-6ubuntu3) ...
+2026-10-30T15:49:14.6931332Z Selecting previously unselected package ccache.
+2026-10-30T15:49:14.7067043Z Preparing to unpack .../3-ccache_4.9.1-1_amd64.deb ...
+2026-10-30T15:49:14.7078016Z Unpacking ccache (4.9.1-1) ...
+2026-10-30T15:49:14.7679755Z Selecting previously unselected package libjsoncpp25:amd64.
+2026-10-30T15:49:14.7816250Z Preparing to unpack .../4-libjsoncpp25_1.9.5-6build1_amd64.deb ...
+2026-10-30T15:49:14.7829334Z Unpacking libjsoncpp25:amd64 (1.9.5-6build1) ...
+2026-10-30T15:49:14.8083053Z Selecting previously unselected package librhash0:amd64.
+2026-10-30T15:49:14.8244028Z Preparing to unpack .../5-librhash0_1.4.3-3build1_amd64.deb ...
+2026-10-30T15:49:14.8257734Z Unpacking librhash0:amd64 (1.4.3-3build1) ...
+2026-10-30T15:49:14.8519536Z Selecting previously unselected package cmake-data.
+2026-10-30T15:49:14.8657517Z Preparing to unpack .../6-cmake-data_3.28.3-1build7_all.deb ...
+2026-10-30T15:49:14.8737228Z Unpacking cmake-data (3.28.3-1build7) ...
+2026-10-30T15:49:15.5236777Z Selecting previously unselected package cmake.
+2026-10-30T15:49:15.5392163Z Preparing to unpack .../7-cmake_3.28.3-1build7_amd64.deb ...
+2026-10-30T15:49:15.5400634Z Unpacking cmake (3.28.3-1build7) ...
+2026-10-30T15:49:15.7122516Z Selecting previously unselected package libltdl-dev:amd64.
+2026-10-30T15:49:15.7286539Z Preparing to unpack .../8-libltdl-dev_2.4.7-7build1_amd64.deb ...
+2026-10-30T15:49:15.7297269Z Unpacking libltdl-dev:amd64 (2.4.7-7build1) ...
+2026-10-30T15:49:15.7665207Z Selecting previously unselected package lbzip2.
+2026-10-30T15:49:15.7815900Z Preparing to unpack .../9-lbzip2_2.5-2.3_amd64.deb ...
+2026-10-30T15:49:15.7838663Z Unpacking lbzip2 (2.5-2.3) ...
+2026-10-30T15:49:15.8292154Z Setting up libltdl-dev:amd64 (2.4.7-7build1) ...
+2026-10-30T15:49:15.8312126Z Setting up autopoint (0.21-14ubuntu2) ...
+2026-10-30T15:49:15.8337387Z Setting up libjsoncpp25:amd64 (1.9.5-6build1) ...
+2026-10-30T15:49:15.8360030Z Setting up librhash0:amd64 (1.4.3-3build1) ...
+2026-10-30T15:49:15.8382999Z Setting up build-essential (12.10ubuntu1) ...
+2026-10-30T15:49:15.8404761Z Setting up cmake-data (3.28.3-1build7) ...
+2026-10-30T15:49:15.8473885Z Setting up lbzip2 (2.5-2.3) ...
+2026-10-30T15:49:15.8496307Z Setting up libhiredis1.1.0:amd64 (1.2.0-6ubuntu3) ...
+2026-10-30T15:49:15.8519494Z Setting up ccache (4.9.1-1) ...
+2026-10-30T15:49:15.8543143Z Updating symlinks in /usr/lib/ccache ...
+2026-10-30T15:49:15.8697553Z Setting up cmake (3.28.3-1build7) ...
+2026-10-30T15:49:15.8723809Z Processing triggers for man-db (2.12.0-4build2) ...
+2026-10-30T15:49:15.8748645Z Not building database; man-db/auto-update is not 'true'.
+2026-10-30T15:49:15.8764535Z Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+2026-10-30T15:49:16.9972511Z 
+2026-10-30T15:49:16.9973260Z Running kernel seems to be up-to-date.
+2026-10-30T15:49:16.9996939Z 
+2026-10-30T15:49:17.0070569Z No services need to be restarted.
+2026-10-30T15:49:17.0071429Z 
+2026-10-30T15:49:17.0072647Z No containers need to be restarted.
+2026-10-30T15:49:17.0073395Z 
+2026-10-30T15:49:17.0074237Z No user sessions are running outdated binaries.
+2026-10-30T15:49:17.0074938Z 
+2026-10-30T15:49:17.0075914Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+2026-10-30T15:49:20.4161778Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages (26.2.2)
+2026-10-30T15:49:20.5473064Z Requirement already satisfied: setuptools in /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages (79.0.1)
+2026-10-30T15:49:20.6800689Z Collecting setuptools
+2026-10-30T15:49:20.7758327Z   Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+2026-10-30T15:49:20.8101015Z Collecting wheel
+2026-10-30T15:49:20.8245638Z   Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+2026-10-30T15:49:20.8620792Z Collecting packaging>=24.0 (from wheel)
+2026-10-30T15:49:20.8766873Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+2026-10-30T15:49:20.8956760Z Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+2026-10-30T15:49:20.9548767Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 31.8 MB/s  0:00:00
+2026-10-30T15:49:20.9681808Z Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+2026-10-30T15:49:20.9875980Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+2026-10-30T15:49:21.1652634Z Installing collected packages: setuptools, packaging, wheel
+2026-10-30T15:49:21.1677332Z   Attempting uninstall: setuptools
+2026-10-30T15:49:21.1678332Z     Found existing installation: setuptools 79.0.1
+2026-10-30T15:49:21.3817806Z     Uninstalling setuptools-79.0.1:
+2026-10-30T15:49:21.4454436Z       Successfully uninstalled setuptools-79.0.1
+2026-10-30T15:49:22.1454817Z 
+2026-10-30T15:49:22.1464537Z Successfully installed packaging-26.3 setuptools-84.2.1 wheel-0.48.0
+2026-10-30T15:49:22.8518779Z Collecting Cython==0.29.34
+2026-10-30T15:49:22.9288580Z   Downloading Cython-0.29.34-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl.metadata (3.1 kB)
+2026-10-30T15:49:22.9469974Z Downloading Cython-0.29.34-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+2026-10-30T15:49:23.1492489Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 10.8 MB/s  0:00:00
+2026-10-30T15:49:23.1754320Z Installing collected packages: Cython
+2026-10-30T15:49:23.7537964Z Successfully installed Cython-0.29.34
+2026-10-30T15:49:23.8201548Z Cython: 0.29.34
+2026-10-30T15:49:23.8637513Z Cython version 0.29.34
+2026-10-30T15:49:24.1556968Z Collecting git+https://github.com/dvjdjvu/buildozer.git@19c5a2b
+2026-10-30T15:49:24.1558921Z   Cloning https://github.com/dvjdjvu/buildozer.git (to revision 19c5a2b) to /tmp/pip-req-build-jalr3htr
+2026-10-30T15:49:24.1580575Z   Running command git clone --filter=blob:none --quiet https://github.com/dvjdjvu/buildozer.git /tmp/pip-req-build-jalr3htr
+2026-10-30T15:49:24.5995325Z   Running command git checkout -q 19c5a2b
+2026-10-30T15:49:24.5996041Z   Did not find branch or tag '19c5a2b', assuming revision or ref.
+2026-10-30T15:49:24.6060838Z   Resolved https://github.com/dvjdjvu/buildozer.git to commit 19c5a2b
+2026-10-30T15:49:24.6093511Z   Installing build dependencies: started
+2026-10-30T15:49:25.1327851Z   Installing build dependencies: finished with status 'done'
+2026-10-30T15:49:25.1337632Z   Getting requirements to build wheel: started
+2026-10-30T15:49:25.5183974Z   Getting requirements to build wheel: finished with status 'done'
+2026-10-30T15:49:25.5191236Z   Preparing metadata (pyproject.toml): started
+2026-10-30T15:49:25.7053643Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2026-10-30T15:49:25.7981926Z Collecting pexpect (from buildozer==1.5.1.dev0)
+2026-10-30T15:49:25.8580123Z   Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+2026-10-30T15:49:25.9332255Z Collecting virtualenv (from buildozer==1.5.1.dev0)
+2026-10-30T15:49:25.9412991Z   Downloading virtualenv-21.15.1-py3-none-any.whl.metadata (4.1 kB)
+2026-10-30T15:49:25.9683779Z Collecting sh (from buildozer==1.5.1.dev0)
+2026-10-30T15:49:25.9757830Z   Downloading sh-2.4.0-py3-none-any.whl.metadata (3.8 kB)
+2026-10-30T15:49:25.9964778Z Collecting ptyprocess>=0.5 (from pexpect->buildozer==1.5.1.dev0)
+2026-10-30T15:49:26.0043349Z   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+2026-10-30T15:49:26.0261587Z Collecting distlib<1,>=0.4.3 (from virtualenv->buildozer==1.5.1.dev0)
+2026-10-30T15:49:26.0344716Z   Downloading distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+2026-10-30T15:49:26.0824186Z Collecting filelock<5,>=3.24.2 (from virtualenv->buildozer==1.5.1.dev0)
+2026-10-30T15:49:26.0895369Z   Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+2026-10-30T15:49:26.0944256Z Requirement already satisfied: packaging>=26.3 in /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages (from virtualenv->buildozer==1.5.1.dev0) (26.3)
+2026-10-30T15:49:26.1224209Z Collecting platformdirs<5,>=4.4 (from virtualenv->buildozer==1.5.1.dev0)
+2026-10-30T15:49:26.1299642Z   Downloading platformdirs-4.14.0-py3-none-any.whl.metadata (5.4 kB)
+2026-10-30T15:49:26.1557121Z Collecting python-discovery>=1.6.1 (from virtualenv->buildozer==1.5.1.dev0)
+2026-10-30T15:49:26.1633183Z   Downloading python_discovery-1.6.7-py3-none-any.whl.metadata (3.9 kB)
+2026-10-30T15:49:26.1779812Z Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+2026-10-30T15:49:26.1934618Z Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+2026-10-30T15:49:26.2026013Z Downloading sh-2.4.0-py3-none-any.whl (48 kB)
+2026-10-30T15:49:26.2122012Z Downloading virtualenv-21.15.1-py3-none-any.whl (5.6 MB)
+2026-10-30T15:49:26.2493505Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 189.1 MB/s  0:00:00
+2026-10-30T15:49:26.2578194Z Downloading distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+2026-10-30T15:49:26.2681536Z Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+2026-10-30T15:49:26.2779262Z Downloading platformdirs-4.14.0-py3-none-any.whl (35 kB)
+2026-10-30T15:49:26.2871298Z Downloading python_discovery-1.6.7-py3-none-any.whl (39 kB)
+2026-10-30T15:49:26.3129262Z Building wheels for collected packages: buildozer
+2026-10-30T15:49:26.3161475Z   Building wheel for buildozer (pyproject.toml): started
+2026-10-30T15:49:26.5413886Z   Building wheel for buildozer (pyproject.toml): finished with status 'done'
+2026-10-30T15:49:26.5416396Z   Created wheel for buildozer: filename=buildozer-1.5.1.dev0-py3-none-any.whl size=91914 sha256=3a97b72ffd7167a54112854c4871e25f39aebcfa787b4a3e62684384773af728
+2026-10-30T15:49:26.5419152Z   Stored in directory: /tmp/pip-ephem-wheel-cache-cq2jezg5/wheels/05/c2/78/c0d8258ae5f27d80b0648d7f91fb176783db3ba8a77502b27b
+2026-10-30T15:49:26.5524259Z Successfully built buildozer
+2026-10-30T15:49:26.5827906Z Installing collected packages: ptyprocess, distlib, sh, platformdirs, pexpect, filelock, python-discovery, virtualenv, buildozer
+2026-10-30T15:49:27.0139103Z 
+2026-10-30T15:49:27.0152769Z Successfully installed buildozer-1.5.1.dev0 distlib-0.4.4 filelock-4.2.4 pexpect-4.9.0 platformdirs-4.14.0 ptyprocess-0.7.0 python-discovery-1.6.7 sh-2.4.0 virtualenv-21.15.1

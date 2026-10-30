@@ -1,0 +1,54 @@
+﻿2026-10-30T15:49:28.2894972Z ##[group]Run python - <<'PY'
+2026-10-30T15:49:28.2895343Z [36;1mpython - <<'PY'[0m
+2026-10-30T15:49:28.2895585Z [36;1mimport os[0m
+2026-10-30T15:49:28.2895799Z [36;1mimport re[0m
+2026-10-30T15:49:28.2896022Z [36;1mfrom pathlib import Path[0m
+2026-10-30T15:49:28.2896281Z [36;1m[0m
+2026-10-30T15:49:28.2896499Z [36;1mspec = Path("buildozer.spec")[0m
+2026-10-30T15:49:28.2897146Z [36;1mcontent = spec.read_text(encoding="utf-8-sig")[0m
+2026-10-30T15:49:28.2897488Z [36;1m[0m
+2026-10-30T15:49:28.2897675Z [36;1mold = ([0m
+2026-10-30T15:49:28.2897963Z [36;1m    "android.extra_manifest_application_arguments = "[0m
+2026-10-30T15:49:28.2898394Z [36;1m    "./src/android/extra_manifest_application_arguments.xml"[0m
+2026-10-30T15:49:28.2898745Z [36;1m)[0m
+2026-10-30T15:49:28.2898931Z [36;1m[0m
+2026-10-30T15:49:28.2899226Z [36;1mp4a_source = Path(os.environ["GITHUB_WORKSPACE"]) / "p4a-custom"[0m
+2026-10-30T15:49:28.2899598Z [36;1m[0m
+2026-10-30T15:49:28.2900037Z [36;1mnew = f"""android.extra_manifest_application_xml = ./src/android/extra_manifest_application_arguments.xml[0m
+2026-10-30T15:49:28.2900619Z [36;1mp4a.source_dir = {p4a_source}"""[0m
+2026-10-30T15:49:28.2900887Z [36;1m[0m
+2026-10-30T15:49:28.2901080Z [36;1mif old not in content:[0m
+2026-10-30T15:49:28.2901438Z [36;1m    raise SystemExit("Konfigurasi manifest lama tidak ditemukan!")[0m
+2026-10-30T15:49:28.2901812Z [36;1m[0m
+2026-10-30T15:49:28.2902034Z [36;1mcontent = content.replace(old, new, 1)[0m
+2026-10-30T15:49:28.2902543Z [36;1m[0m
+2026-10-30T15:49:28.2902746Z [36;1mcontent, count = re.subn([0m
+2026-10-30T15:49:28.2903038Z [36;1m    r"(?m)^android\.api\s*=\s*\d+\s*$",[0m
+2026-10-30T15:49:28.2903336Z [36;1m    "android.api = 33",[0m
+2026-10-30T15:49:28.2903589Z [36;1m    content,[0m
+2026-10-30T15:49:28.2903807Z [36;1m    count=1[0m
+2026-10-30T15:49:28.2904018Z [36;1m)[0m
+2026-10-30T15:49:28.2904205Z [36;1m[0m
+2026-10-30T15:49:28.2904393Z [36;1mif count != 1:[0m
+2026-10-30T15:49:28.2904765Z [36;1m    raise SystemExit("Konfigurasi android.api tidak berhasil diperbarui!")[0m
+2026-10-30T15:49:28.2905191Z [36;1m[0m
+2026-10-30T15:49:28.2905436Z [36;1mspec.write_text(content, encoding="utf-8")[0m
+2026-10-30T15:49:28.2905748Z [36;1m[0m
+2026-10-30T15:49:28.2905969Z [36;1mprint("Manifest configuration: OK")[0m
+2026-10-30T15:49:28.2906282Z [36;1mprint("Android API: 33")[0m
+2026-10-30T15:49:28.2907001Z [36;1mprint(f"P4A source: {p4a_source}")[0m
+2026-10-30T15:49:28.2907383Z [36;1mPY[0m
+2026-10-30T15:49:28.2928607Z shell: /usr/bin/bash -e {0}
+2026-10-30T15:49:28.2928877Z env:
+2026-10-30T15:49:28.2929208Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:28.2929983Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+2026-10-30T15:49:28.2930746Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.2931410Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+2026-10-30T15:49:28.2932066Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.2932678Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.2933466Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+2026-10-30T15:49:28.2934154Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+2026-10-30T15:49:28.2934751Z ##[endgroup]
+2026-10-30T15:49:28.3307035Z Manifest configuration: OK
+2026-10-30T15:49:28.3308099Z Android API: 33
+2026-10-30T15:49:28.3309177Z P4A source: /home/runner/work/navmotion-x670-build/navmotion-x670-build/p4a-custom
